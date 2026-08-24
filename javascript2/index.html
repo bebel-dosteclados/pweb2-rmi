@@ -26,7 +26,6 @@ function valor3(){
 }
 
 function escrevernaDiv(texto){
-    texto = prompt("Digite o texto que deseja escrever na div:");
     document.getElementById("minhaDiv").innerHTML = texto;
 
 }
@@ -34,9 +33,6 @@ function escreve2(){
     texto = prompt("Digite o texto que deseja escrever na div:")
     document.getElementById("escreve2").innerHTML = texto;
 }
-
-
-
 
 
 </script>
@@ -56,7 +52,7 @@ function escreve2(){
     <hr>
     
     <h1> Escrevendo na div </h1>
-    <button onclick="escrevernaDiv()">Escrever na Div</button>
+    <button onclick="escrevernaDiv('<h1> Programação Web </h1>')">Escrever</button>
     <div id="minhaDiv"></div>
     <hr>
     
