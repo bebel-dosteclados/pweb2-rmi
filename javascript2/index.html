@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+
+function valor1(){
+    arg=25
+    var raiz = Math.sqrt(arg);
+    alert('A raiz quadrada de ' + arg + ' é: ' + raiz);
+}
+function valor2(){
+    arg=36
+    var raiz = Math.sqrt(arg);
+    alert('A raiz quadrada de ' + arg + ' é: ' + raiz);
+}
+function valor3(){
+    arg=49
+    var raiz = Math.sqrt(arg);
+    alert('A raiz quadrada de ' + arg + ' é: ' + raiz);
+}
+
+function escrevernaDiv(texto){
+    texto = prompt("Digite o texto que deseja escrever na div:");
+    document.getElementById("minhaDiv").innerHTML = texto;
+
+}
+function escreve2(){
+    texto = prompt("Digite o texto que deseja escrever na div:")
+    document.getElementById("escreve2").innerHTML = texto;
+}
+
+
+
+
+
+</script>
+<body>
+
+    <h1> Raiz Quadrada</h1>
+
+    <button onclick="valor1()">Raiz de 25</button>
+    <br>
+    <br>
+    <button onclick="valor2()">Raiz de 36</button>
+    <br>
+    <br>
+    <button onclick="valor3()">Raiz de 49</button>
+    <br>
+    <br>
+    <hr>
+    
+    <h1> Escrevendo na div </h1>
+    <button onclick="escrevernaDiv()">Escrever na Div</button>
+    <div id="minhaDiv"></div>
+    <hr>
+    
+    <h1> Escrevendo texto dinâmico </h1>
+    <button onclick="escreve2()">Escreve</button> <br>
+    <div id="escreve2"></div>
+
+</body>
+</html>
