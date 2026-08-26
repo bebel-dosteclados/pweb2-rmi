@@ -34,6 +34,33 @@ function escreve2(){
     document.getElementById("escreve2").innerHTML = texto;
 }
 
+function numero(){
+    var input= prompt("Digite o número de elementos que deseja mostrar:")
+    var n = parseInt(input);
+    if (isNaN(n) ||  n<=0 ) {
+        alert("Por favor, digite um número válido maior que zero.");
+        return;
+}
+    var div = document.getElementById("numerosInput");
+    div.innerHTML = "";
+    for (var i = 1; i <= n; i++) {
+        div.innerHTML += i + "<br>";
+    }
+}
+
+function numeroescreverNumerosInput(){
+    var input= document.getElementById("numerosInput")
+    var n = parseInt(input.value);
+    if (isNaN(n) ||  n<=0 ) {
+        alert("Por favor, digite um número válido maior que zero.");
+        return;
+}
+    var div = document.getElementById("numerosInput");
+    div.innerHTML = "";
+    for (var i = 1; i <= n; i++) {
+        div.innerHTML += i + "<br>";
+    }
+}
 
 </script>
 <body>
@@ -60,5 +87,18 @@ function escreve2(){
     <button onclick="escreve2()">Escreve</button> <br> <br>
     <div id="escreve2"></div>
 
+    <hr>
+    <h1> Desafio </h1>
+    <button onclick="numero()">Mostrar Números</button> <br> <br>
+    <div id="numerosInput"></div>
+
+    <hr>
+    <h1>Desafio com Input</h1>
+    <label for="numeroInput>Digite o valor de N":</label>
+    <input type="number" id="numeroInput" placeholder="Digite um número" min="1">
+    <button onclick="escreverNumerosInput()">Escrever Números</button>
+    <br>
+    <br>
+    <div id="numerosInput"></div>
 </body>
 </html>
