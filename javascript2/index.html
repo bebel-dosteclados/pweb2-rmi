@@ -48,7 +48,7 @@ function numero(){
     }
 }
 
-function numeroescreverNumerosInput(){
+function escreverNumerosInput(){
     var input= document.getElementById("numerosInput")
     var n = parseInt(input.value);
     if (isNaN(n) ||  n<=0 ) {
@@ -94,8 +94,8 @@ function numeroescreverNumerosInput(){
 
     <hr>
     <h1>Desafio com Input</h1>
-    <label for="numeroInput>Digite o valor de N":</label>
-    <input type="number" id="numeroInput" placeholder="Digite um número" min="1">
+    <label for="numerosInput">Digite o valor de N:</label>
+    <input type="number" id="numerosInput" placeholder="Digite um número" min="1">
     <button onclick="escreverNumerosInput()">Escrever Números</button>
     <br>
     <br>
