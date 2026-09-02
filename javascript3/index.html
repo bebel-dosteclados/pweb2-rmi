@@ -7,20 +7,22 @@
     <script>
         let linguagens = Array();
 
-            linguagens[0] = "Dart";
-            linguagens[1] = "PHP";
-            linguagens[2] = "Java";
-            linguagens[3] = "Python";
-            linguagens[4] = "Perl";
-            linguagens[5] = "Ruby on Rails";
-            linguagens[6] = "C ++";
+            linguagens[0] = 'Dart';
+            linguagens[1] = 'PHP';
+            linguagens[2] = 'Java';
+            linguagens[3] = 'Python';
+            linguagens[4] = 'Perl';
+            linguagens[5] = 'Ruby on Rails';
+            linguagens[6] = 'C ++';
 
         function mostrarListaLinguagens() {
-        const container = document.getElementById("minhaDiv");
+        
+        const container = document.getElementById('minhaDiv');
             for (var i = 0; i < linguagens.length; i ++) {
-                 var tag = '<h5>' + i + ' - ' + Linguagens[i] + '</h5>';
+                 var tag = '<h5>' + i + ' - ' + linguagens[i] + '</h5>';
                  container.innerHTML += tag;      
             }      
+            
 
         }
 
@@ -39,7 +41,6 @@
     <button onclick="mostrarListaLinguagens()">Criar Array</button> <br><br>
 
     <div id="minhaDiv"></div>
-    <br> <br>
 
     <button onclick="posicaoLinguagens()">Posição no Arrray</button>
 
