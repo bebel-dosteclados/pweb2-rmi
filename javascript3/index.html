@@ -15,6 +15,9 @@
             linguagens[5] = 'Ruby on Rails';
             linguagens[6] = 'C ++';
 
+          
+
+
         function mostrarListaLinguagens() {
         
         const container = document.getElementById('minhaDiv');
@@ -30,10 +33,35 @@
             var indice = prompt("Qual posição da lista deseja consultar?");
             alert(linguagens[indice]);
 
+                      let frutas = Array();
+
+            frutas[0] = 'Abacaxi';
+            frutas[1] = 'Banana';
+            frutas[2] = 'Cajú';
+            frutas[3] = 'Damasco';
+            frutas[4] = 'Figo';
+            frutas[5] = 'Goiaba';
+
+                function mostrarfrutas() {
+        
+        const container = document.getElementById('minhaDiv');
+            for (var i = 0; i < frutas.length; i ++) {
+                 var tag = '<h5>' + i + ' - ' + frutas[i] + '</h5>';
+                 container.innerHTML += tag;      
+            }   
         }
-            
+
+                function posicaoFrutas(){
+            var indice = prompt("Qual posição da lista deseja consultar?");
+            alert(frutas[indice]);
+
+
+        }
+    }
     </script>
 </head>
+
+
 <body>
 
     <h1>Array de Linguagens</h1>
@@ -43,6 +71,12 @@
     <div id="minhaDiv"></div>
 
     <button onclick="posicaoLinguagens()">Posição no Arrray</button>
+    <hr>
+    <h1>Array de Frutas</h1>
+    <button onclick="mostrarfrutas()">Criar Array</button> <br><br>
+    <div id="minhaDiv"></div>
+    <button onclick="posicaoFrutas()">Posição no Arrray</button>
+    <hr>
 
 
     
