@@ -32,8 +32,9 @@
         function posicaoLinguagens(){
             var indice = prompt("Qual posição da lista deseja consultar?");
             alert(linguagens[indice]);
+        }
 
-                      let frutas = Array();
+        let frutas = Array();
 
             frutas[0] = 'Abacaxi';
             frutas[1] = 'Banana';
@@ -44,7 +45,7 @@
 
                 function mostrarfrutas() {
         
-        const container = document.getElementById('minhaDiva');
+        const container = document.getElementById('minhaDiv2');
             for (var i = 0; i < frutas.length; i ++) {
                  var tag = '<h5>' + i + ' - ' + frutas[i] + '</h5>';
                  container.innerHTML += tag;      
@@ -57,7 +58,6 @@
 
 
         }
-    }
     </script>
 </head>
 
@@ -74,7 +74,7 @@
     <hr>
     <h1>Array de Frutas</h1>
     <button onclick="mostrarfrutas()">Criar Array</button> <br><br>
-    <div id="minhaDiva"></div>
+    <div id="minhaDiv2"></div>
     <button onclick="posicaoFrutas()">Posição no Arrray</button>
     <hr>
 
