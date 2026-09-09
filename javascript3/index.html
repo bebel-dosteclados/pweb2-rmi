@@ -44,7 +44,7 @@
 
                 function mostrarfrutas() {
         
-        const container = document.getElementById('minhaDiv');
+        const container = document.getElementById('minhaDiva');
             for (var i = 0; i < frutas.length; i ++) {
                  var tag = '<h5>' + i + ' - ' + frutas[i] + '</h5>';
                  container.innerHTML += tag;      
@@ -74,7 +74,7 @@
     <hr>
     <h1>Array de Frutas</h1>
     <button onclick="mostrarfrutas()">Criar Array</button> <br><br>
-    <div id="minhaDiv"></div>
+    <div id="minhaDiva"></div>
     <button onclick="posicaoFrutas()">Posição no Arrray</button>
     <hr>
 
