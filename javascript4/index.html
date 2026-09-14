@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let pilhaPessoas = Array();
+
+            pilhaPessoas[0] = 'Ana';
+            pilhaPessoas[1] = 'Bianca';
+            pilhaPessoas[2] = 'Camila';
+            pilhaPessoas[3] = 'Duda';
+            pilhaPessoas[4] = 'Erica';
+            pilhaPessoas[5] = 'Fernanda';
+            pilhaPessoas[6] = 'Gabriela';
+
+          
+
+
+        function mostrarpilhaPessoas() {
+        
+        const container = document.getElementById('minhaDiv');
+            for (var i = 0; i < pilhaPessoas.length; i ++) {
+                 var tag = '<h5>' + i + ' - ' + pilhaPessoas[i] + '</h5>';
+                 container.innerHTML += tag;      
+            }      
+        }
+
+
+        function posicaoPessoas(){
+            var indice = prompt("Qual posição da lista deseja consultar?");
+            alert(pilhaPessoas[indice]);
+
+                 var tag = '<h5>' + i + ' - ' + pilhaPessoas[i] + '</h5>';
+   
+        }
+
+        function adicionar(){
+            var nome=prompt('Qual o nome da pessoa?');
+            pilhaPessoas.push(nome);
+        }
+
+
+        function remover() {
+            if (pilhaPessoas.length ===0) {
+                alert('A pilha está vazia!');
+            } else{
+                let removido = pilhaPessoas.pop();
+                alert('Removido:' + removido );
+            }
+        }
+
+        function limparLista(){
+            pilhaPessoas=[];
+            alert('Limpou hein!');
+        }
+    
+</script>
+</head>
+<body>
+
+    <h1> lista de pessoas</h1>
+
+    <button onclick="adicionar()">Adicionar pessoas </button>
+
+    <button onclick="mostrarpilhaPessoas()">Mostrar lista </button>
+
+    <button onclick="posicaoPessoas()">Posição </button>
+
+    <button onclick="remover()">Remover </button>
+
+    <button onclick="limparLista()">Limpar </button>
+
+    <div id="minhaDiv"></div>
+
+    <hr>
+</body>
+        
