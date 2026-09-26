@@ -31,6 +31,11 @@
       const autor = document.getElementById('autor').value;
       const ano = document.getElementById('ano').value;
 
+      if (titulo === '' || autor === '' || ano === '') {
+  alert('Preencha todos os campos!');
+  return;
+}
+
       pilhaPessoas.push({ titulo, autor, ano });
 
       // limpa os campos e atualiza a lista
