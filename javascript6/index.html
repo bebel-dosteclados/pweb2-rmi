@@ -102,6 +102,13 @@
 	
 	function removerContato(indice) {
       // implementar a função remover a partir de um indice
+      if (pilhaPessoas.length === 0) {
+        alert('A pilha está vazia!');
+      } else {
+        const removido = pilhaPessoas.pop();
+        alert('Removido: ' + removido.nome + ' - ' + removido.contato);
+        mostrarLista();
+      }
     }	
 	
 
