@@ -77,10 +77,27 @@
 	
 	function salvar() {
 		// implementar função salvar
+    const nome = document.getElementById('nome').value.trim();
+    const contato = document.getElementById('contato').value.trim();
+
+    if (indiceEdicao === null) {
+      pilhaPessoas.push({ nome, contato});
+    } else {
+      pilhaPessoa[indiceEdicao] = { nome , contato};
+      indiceEdicao = null;
+    }
+
+    document.getElementById('nome').value = '';
+    document.getElementById('contato').value = '';
+    mostrarLista();
     }
 
    function editarContato(indice) {
       // implementar a função editar a partir de um indice
+      const pessoa = pilhaPessoa[indice];
+      document.getElementById('nome').value = pessoa.nome;
+      document.getElementById('contato').value = pessoa.contato;
+      indiceEdicao = indice;
     }
 	
 	function removerContato(indice) {
